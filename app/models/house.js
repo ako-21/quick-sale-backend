@@ -10,7 +10,7 @@ const houseSchema = new mongoose.Schema({
     required: true
   },
   askingprice: {
-    type: Number,
+    type: String,
     required: true
   },
   owner: {

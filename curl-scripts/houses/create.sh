@@ -12,7 +12,8 @@ curl "${API}${URL_PATH}" \
     "house": {
       "address": "'"${ADDRESS}"'",
       "description": "'"${DESCRIPTION}"'",
-      "price": "'"${PRICE}"'"
+      "askingprice": "'"${PRICE}"'",
+      "owner": "'"${OWNERID}"'"
     }
   }'
 

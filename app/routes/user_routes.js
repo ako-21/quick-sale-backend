@@ -15,6 +15,9 @@ const errors = require('../../lib/custom_errors')
 const BadParamsError = errors.BadParamsError
 const BadCredentialsError = errors.BadCredentialsError
 
+const customErrors = require('./../../lib/custom_errors.js')
+const handle404 = customErrors.handle404
+
 const User = require('../models/user')
 
 // passing this as a second argument to `router.<verb>` will make it
@@ -24,6 +27,21 @@ const requireToken = passport.authenticate('bearer', { session: false })
 
 // instantiate a router (mini app that only handles routes)
 const router = express.Router()
+
+// see index of all users
+router.get('/users', (req, res, next) => {
+  User.find()
+    .then(users => res.json({ users: users }))
+    .catch(next)
+})
+
+// find user by id
+router.get('/users/:id', (req, res, next) => {
+  const id = req.params.id
+  User.findById(id)
+    .then(handle404)
+    .then(user => res.json({ user: user }))
+})
 
 // SIGN UP
 // POST /sign-up
