@@ -18,6 +18,4 @@ const exampleSchema = new mongoose.Schema({
   timestamps: true
 })
 
-// version control test
-
 module.exports = mongoose.model('Example', exampleSchema)
