@@ -9,9 +9,37 @@ const houseSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  beds: {
+    type: String,
+    required: true
+  },
+  baths: {
+    type: String,
+    required: true
+  },
+  sqft: {
+    type: String,
+    required: true
+  },
   askingprice: {
     type: String,
     required: true
+  },
+  closingdate: {
+    type: String,
+    required: true
+  },
+  closingattorney: {
+    type: String
+  },
+  emdeposit: {
+    type: String
+  },
+  listingphone: {
+    type: String
+  },
+  listingemail: {
+    type: String
   },
   owner: {
     type: mongoose.Schema.Types.ObjectId,
