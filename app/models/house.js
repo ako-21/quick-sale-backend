@@ -38,9 +38,6 @@ const houseSchema = new mongoose.Schema({
   listingphone: {
     type: String
   },
-  listingemail: {
-    type: String
-  },
   owner: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User'
