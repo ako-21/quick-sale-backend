@@ -19,8 +19,7 @@ curl "${API}${URL_PATH}" \
       "closingdate": "'"${DATE}"'",
       "closingattorney": "'"${ATTORNEY}"'",
       "emdeposit": "'"${DEPOSIT}"'",
-      "listingphone": "'"${PHONE}"'",
-      "owner": "'"${OWNERID}"'"
+      "listingphone": "'"${PHONE}"'" 
     }
   }'
 

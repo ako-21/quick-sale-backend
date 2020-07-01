@@ -3,7 +3,8 @@ const mongoose = require('mongoose')
 const houseSchema = new mongoose.Schema({
   address: {
     type: String,
-    required: true
+    required: true,
+    unique: true
   },
   description: {
     type: String,

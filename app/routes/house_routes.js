@@ -9,13 +9,13 @@ const requireOwnership = customErrors.requireOwnership
 const requireToken = passport.authenticate('bearer', { session: false })
 
 router.post('/houses', requireToken, (req, res, next) => {
-  // set owner of new example to be current user
+  // set owner of new house to be current user
   req.body.house.owner = req.user.id
 
   House.create(req.body.house)
     // respond to succesful `create` with status 201 and JSON of new "example"
     .then(house => {
-      res.status(201).json({ example: house.toObject() })
+      res.status(201).json({ house: house.toObject() })
     })
     // if an error occurs, pass it off to our error handler
     // the error handler needs the error message and the `res` object so that it
