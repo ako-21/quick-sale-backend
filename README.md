@@ -19,7 +19,7 @@ This application provides a platform for home owners and contract holders of pro
 * Google Places API
 
 # Development Process
-
+[Link to Backend Server](https://limitless-gorge-25554.herokuapp.com)
 [Link to Frontend Repo](https://github.com/ako-21/quick-sale-client)
 
 I started by mapping out the ERD for the back end application and the user stories for the client side to conceptualize exactly what attributes each house listing and user needed to have to fulfill the user experience goal of my app. Once completed, I designed wireframes to get a solid starting point for my html and css.
@@ -34,4 +34,4 @@ Currently, users do not have the option of adding photos of their house to accom
 
 # Entity Relationship Diagram
 
-[Link to ERD](https://docs.google.com/document/d/1xw79VUVyiZ6JtMY74qglHHsd66PPf9lwppjXZdaUxu0/edit?usp=sharing) 
+[Link to ERD](https://docs.google.com/document/d/1xw79VUVyiZ6JtMY74qglHHsd66PPf9lwppjXZdaUxu0/edit?usp=sharing)
